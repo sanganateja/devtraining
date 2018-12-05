@@ -1,4 +1,5 @@
 pipeline {
+   agen any
     stages {
         stage('start pipeline') {
             steps {
