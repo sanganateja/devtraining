@@ -1,7 +1,7 @@
 pipeline {
    agen any
     stages {
-        stage('start pipeline') {
+        stage('frist') {
             steps {
                 echo"Hello Iam going to start"
             }
