@@ -1,7 +1,7 @@
 pipeline {
-   agent any
-    stages {
-        stage('frist') {
+    agent any
+	stages {
+        stage('start pipeline') {
             steps {
                 echo"Hello Iam going to start"
             }
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('dockerbuild') {
 		   steps {
-		      sh 'docker build -t newimag-12 .'
+		      sh 'docker build -t sangana/newimag-12 .'
 			}
 	    }
         stage("push to DTR") {
